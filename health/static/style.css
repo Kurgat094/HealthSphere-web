@@ -1,0 +1,302 @@
+*{
+    background-color: #060125;
+}
+.body{
+    position: absolute;
+}
+.signup-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    left: 80%;
+    float: right;
+
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+#loginBtn{
+    background-color: black;
+}
+
+#registerBtn{
+    background-color: #0056b3;
+}
+
+#loginBtn:hover {
+    width: 100px;
+    color: blue;
+}
+
+#registerBtn:hover {
+    width: 100px;
+    color: blue;
+}
+#health{
+    color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    padding: 20px;
+    top: 10%;
+    left: 25%;
+    font-size: 100px;
+    font-weight: 900;
+}
+.login{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.cardi{
+    border: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 20%;
+    overflow: hidden; 
+    background-color: #0c0236; 
+    outline: #0c0236;
+}
+
+
+#doctor {
+    width: auto; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+#signin {
+    display: flex; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+
+.cards {
+    width: 100%; 
+    text-align: center; 
+}
+
+.cards h3 {
+    margin-bottom: 20px; 
+    color: hsl(0, 18%, 97%); 
+}
+
+.cards input[type="email"] {
+    width: 60%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.cards input[type="submit"] {
+    width: 100%; 
+    padding: 10px;
+    border: none; 
+    border-radius: 5px; 
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.cards .next {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.cards #next {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cards #next:hover {
+    background-color: #0056b3;
+}
+
+.cards .next a {
+    color: #e5e8eb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.cards .next a:hover {
+    text-decoration: underline;
+}
+
+.navbar{
+    background-color: #e5e8eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.show {
+    display: block;
+}
+.search{
+    background-color: #e5e8eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+.search input{
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+.search input :focus{
+    outline: none;
+
+}
+.navbar h4{
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+
+.offer{
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+.cart{
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+.signin{
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+.search img{
+    width: 20px;
+    border-radius: 50%;
+}
+
+.signin p a {
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+.dropdown p a {
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+.cart p a {
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+.offer p a{
+    background-color: #e5e8eb;
+    color: #0c0236;
+    text-decoration: none;
+    border-radius: 20px 30px 30px 20px;
+    outline: none;
+}
+
+.navbar ul {
+    background-color: #e5e8eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    outline: none;
+    padding: 20px;
+    float: inline-start;
+}
+    

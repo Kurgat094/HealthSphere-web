@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="navbar">  
+        <ul>
+            <li><h4>HealthSphere</h4></li>
+            <li>search</li>
+            <li>dropdown</li>
+            <li>cart</li>
+            <li> offers</li>
+            <li>login</li>
+        </ul>
+    </div>
+    <div class="container">
+
+    </div>
+</form>
+{% endblock %}
