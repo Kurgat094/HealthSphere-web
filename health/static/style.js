@@ -40,3 +40,27 @@ window.onclick = function(event) {
     }
 }
 
+
+ // JavaScript to toggle the dropdown
+ function toggleDropdown() {
+    document.querySelector('.dropdown').classList.toggle('show');
+}
+
+// Close the dropdown if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+}
+
+/* Style for the dropdown button */
+.dropbtn {
+    background-color: #0587f1;
+

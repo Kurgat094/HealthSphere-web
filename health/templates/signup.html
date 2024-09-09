@@ -7,8 +7,8 @@ sign up
 
 
 {% block content %}
-<form action="" method="post">
-    <div class="container">
+<form action="" method="post" style="background-color: rgb(2, 2, 80); height: 105vh;" >
+    <div class="container" >
         <div class="signup-option">
             <button id="loginBtn" class="btn btn-success" style="width: auto;">Login</button>
             <button id="registerBtn" class="btn btn-success" style="width: auto;">Register</button>
@@ -17,10 +17,10 @@ sign up
             <h1 id="health"><b>HealthSphere</b></h1>
             <div class="cardi">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img id="doctor" style="width: 300px; height: auto;" src="{% static 'doctor.jpg' %}" alt="">
                     </div>
-                    <div id="signin" class="col-md-6">
+                    <div id="signin" class="col-lg-6">
                         <div class="cards" id="cards">
                             {% if error_message %}
                             <p style="color: red;">{{ error_message }}</p>

@@ -2,23 +2,99 @@
 {% load static %}
 
 {% block title %}
+Home
 {% endblock %}
 
 {% block content %}
-<form action="" method="post">
+<form action="" method="post" style="background-color: beige;">
     {% csrf_token %}
-    <div class="navbar">  
-        <ul>
-            <li><h4>HealthSphere</h4></li>
-            <li>search</li>
-            <li>dropdown</li>
-            <li>cart</li>
-            <li> offers</li>
-            <li>login</li>
-        </ul>
-    </div>
+    <nav>
+        <div class="navbar">  
+            <ul>
+                <li><h4><b>HealthSphere</b></h4></li>
+                <li>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown()">Dropdown </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Carts<img  style="width: 30px; height: 30px; padding: 5px; border-radius: 30%;" src="{% static 'cart.png' %}" alt=""></a></li>
+                <li><a href="#">Offers <img  style="width: 30px; height: 30px; padding: 5px; border-radius: 30%;" src="{% static 'aroww.png' %}" alt=""></a></li>
+                <li><a href="/signin">Login <img  style="width: 30px; height: 30px; padding: 5px; border-radius: 50%;" src="{% static 'login1.png' %}" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+<main>
     <div class="container">
-
+        <div class="content">
+            <div class="healthsphere" style="background-color: rgb(1, 1, 73);">
+                <h1 id="health"><b>HealthSphere</b></h1>
+            </div>
+            <div class="car">
+                <div class="blog">
+                    <p><h6>Instant video <br> Consultaion.</h6></p>
+                    <p>Connect Within 60 seconds.</p>
+                    <button  style="width:50px;"><img  style="width: 30px; height: 30px; padding: 5px; border-radius: 30%;" src="{% static 'aroww.png' %}" alt=""></button>
+                </div>
+                <div class="blog1">
+                    <p><h6>Find The Doctors <br> Near you</h6></p>
+                    <p>Confirmed Appointments</p>
+                    <button style="width:50px;"> <img  style="width: 30px; height: 30px; padding: 5px; border-radius: 30%;" src="{% static 'aroww.png' %}" alt=""></button>
+                </div>
+                <div class="blog2">
+                    <p><h6>24/7 <br> Medicine</h6></p>
+                    <p>Essentials At Your Doorstep</p>
+                    <button style="width:50px;"><img  style="width: 30px; height: 30px; padding: 5px; border-radius: 30%; background-color:;" src="{% static 'aroww.png' %}" alt=""></button>
+                </div>
+                <div class="blog3">
+                    <p><h6>Lab <br>Tests</h6></p>
+                    <p>Simple Pickup At Your Home</p>
+                    <button  style="width:50px;"><img  style="width: 30px; height: 30px; padding: 5px; border-radius: 30%;" src="{% static 'aroww.png' %}" alt=""></button>
+                </div>
+            </div>
+            
+            <div class="review">
+                <h4 style="color: rgb(4, 4, 99);">Our Doctor And Clinics Have The Best <br> Reviews</h4>
+            </div>
+            <div class="events">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="podcast">
+                            <p>podcast</p>
+                            <h4>Nutrition And <br>Mental Health.</h4>
+                            <p>The Food We Eat Provide The Nutrients <br>That Our Bodies Needs To Function <br> Properly</p>
+                            <button style="width: 50px;"><img  style="width: 30px; height: 30px; padding: 5px; border-radius: 50%;" src="{% static 'arrow.jpg' %}" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="live_events">
+                            <p>Live events</p>
+                            <h4>Halthy Habits For A <br>Happy Heart</h4>
+                        </div>
+                        <div class="bb">
+                            <div class="experience">
+                                <p><h5>Experience A <br>New Healthy System</h5></p>
+                            </div>
+                            <div class="customer">
+                                <p><h5>Become A <br>Happy Customer <br>Today</h5></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</main>
+   
 </form>
 {% endblock %}
