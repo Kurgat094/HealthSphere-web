@@ -9,7 +9,10 @@
     margin-top: 10px;
     left: 80%;
     float: right;
-
+}
+.signup-option button a{
+    text-decoration: none;
+    font-weight: bold;
 }
 .btn {
     width: 100%;
@@ -24,10 +27,12 @@
 }
 #loginBtn{
     background-color: black;
+   
 }
 
 #registerBtn{
     background-color: #0056b3;
+  
 }
 
 #loginBtn:hover {
@@ -147,7 +152,41 @@
 .cards .next a:hover {
     text-decoration: underline;
 }
+/* styling of signup page */
+.signup{
+    width: 100%; 
+    text-align: center; 
+}
+.signup input{
+    width: 60%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    color: #0c0236;
+} 
+.signup label{
+    padding: 10px;
+    color: #e5e8eb;
+    font-weight: bolder;
+}
+.signup h3{
+    padding: 10px;
+    color: #e5e8eb;
+    font-weight: bolder;
+}
+.signup .submit input{
+    width: 90px;
+    color: green; 
+    font-weight: bold; 
+    background-color: rgb(1, 50, 158);
+}
+.signup .submit input:hover{
+    background-color: palevioletred;
+    color: #007bff;
+}
 
+/* styling of the home page */
 .navbar{
     display: flex;
     margin: 5px;
@@ -407,12 +446,12 @@ button:hover {
 }
 
 .podcast{
-    background: #0cda05;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: left;
+    background-image: url('/static/healthpodcast.jpg');
 } 
 .live_events{
     padding: 20px;
@@ -420,6 +459,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: left;
+    background-image: url('/static/live_event.jpg');
 } 
 .experience{
     padding: 20px;
@@ -427,12 +467,14 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: left;
+    background-image: url('/static/healthpodcast.jpg');
 } .customer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: left;
+    background-image: url('/static/healthpodcast.jpg');
 }
 
 .podcast h4, .live_events h4, .experience h5, .customer h5 {

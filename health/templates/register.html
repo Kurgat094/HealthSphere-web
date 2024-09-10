@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Register
+{% endblock %}
+
+
+{% block content %}
+<form action="" method="post" style="background-color: rgb(2,2, 80); height: fit-content;">
+    <div class="container" >
+        <div class="signup-option">
+            <button id="loginBtn" class="btn btn-success" style="width: auto;"><a href="/signin">Login</a></button>
+            <button id="registerBtn" class="btn btn-success" style="width: auto;"><a href="/signup">Register</a></button>
+        </div>
+        <div class="login">
+            <h1 id="health"><b>HealthSphere</b></h1>
+            <div class="cardi">
+                <div class="row">
+                    <div class="col-lg-6" >
+                        <img id="doctor" style="width: 450px; height:600px; border-radius: 40px 20px 20px 10px;" src="{% static 'doctor2.jpg' %}" alt="">
+                    </div>
+                    <div id="signin" class="col-lg-6">
+                        <div class="signup" id="signup">
+                            {% if error_message %}
+                            <p style="color: red;">{{ error_message }}</p>
+                            {% endif %}
+                            {% csrf_token %}
+                            <img style="width: 70px; height: 70px;border-radius: 50%; " src="{% static 'heartbeat.png' %}" alt="">
+                            <h3><b>Sign In <br>WELCOME!!</b></h3>
+                            <label for="">Username:</label><br>
+                            <input type="text" name="username" placeholder="Username" required id=""><br>
+                            <label for="">Email</label><br>
+                            <input type="email" placeholder="@youremail.com" name="email" required><br>
+                            <label for="">Password</label><br>
+                            <input type="password" placeholder="password" name="password" id="" required><br>
+                            <label for="">Confirm Password</label><br>
+                            <input type="password" placeholder="Confirm password" name="confirm_password"> <br>
+                            <div class="submit">
+                                <input type="submit" value="Register" ><br>
+                                <p style="color: white;">Already have an account <a style="text-decoration: none;" href="/signin">login</a></p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

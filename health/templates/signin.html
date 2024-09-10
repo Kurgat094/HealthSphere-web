@@ -10,8 +10,8 @@ sign up
 <form action="" method="post" style="background-color: rgb(2, 2, 80); height: 105vh;" >
     <div class="container" >
         <div class="signup-option">
-            <button id="loginBtn" class="btn btn-success" style="width: auto;">Login</button>
-            <button id="registerBtn" class="btn btn-success" style="width: auto;">Register</button>
+            <button id="loginBtn" class="btn btn-success" style="width: auto;"><a href="/signin">Login</a></button>
+            <button id="registerBtn" class="btn btn-success" style="width: auto;"><a href="/signup">Register</a></button>
         </div>
         <div class="login">
             <h1 id="health"><b>HealthSphere</b></h1>
@@ -31,7 +31,7 @@ sign up
                             <input type="email" placeholder="@youremail.com" name="email" required>
                             <div class="next">
                                 <input type="submit" value="Next >" style="width: 70px;" name="" id="next">
-                                <p><a href="">forgot password?</a></p>
+                                <p><a href="/forgot_password">forgot password?</a></p>
                             </div>
                             <script>
                                 document.getElementById("next").addEventListener("click", function() {
